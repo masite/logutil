@@ -31,3 +31,8 @@ allprojects {
   }
 
 ```
+```
+比如：输出到本地文件，打印所有log
+ CustomDiskLogStrategy customDiskLogStrategy = new CustomDiskLogStrategy(false,true);
+    Logger.addLogAdapter(new CustomLogAdapter(customDiskLogStrategy).getCustomLogAdapter());
+```
