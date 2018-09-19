@@ -8,14 +8,15 @@ allprojects {
 			...
 			maven { url 'https://jitpack.io' }
 		}
-	}
+	    }
   
   		dependencies {
 	        compile 'com.github.masite:logutil:1.0.0'
-	}
+	        }
 
 ```
 
+```
   /**
    * @param isOutputLocal 是否输出到logcat
    * @param isOutputAll 是否输出所有日志 isOutputLocal为true时设置无效
@@ -34,6 +35,7 @@ allprojects {
   }
 
 ```
+
 ```
 比如：输出到本地文件，打印所有log
  CustomDiskLogStrategy customDiskLogStrategy = new CustomDiskLogStrategy(false,true);
