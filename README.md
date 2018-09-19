@@ -1,5 +1,8 @@
 # loglib
 Control the log output address
+基于 compile "com.orhanobut:logger:2.1.1" 的改善
+
+```
 allprojects {
 		repositories {
 			...
