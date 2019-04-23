@@ -9,16 +9,19 @@ allprojects {
 			maven { url 'https://jitpack.io' }
 		}
 	    }
-  
-  		dependencies {
+```
+```
+//加入依赖
+dependencies {
 	        compile 'com.github.masite:logutil:1.0.0'
-	        }
-
+	     }
 ```
 
 ```
+  //核心代码就是这个配置文件。
+  
   /**
-   * @param isOutputLocal 是否输出到logcat
+   * @param isOutputLocal 是否输出到logcat，true logcat打印。false 
    * @param isOutputAll 是否输出所有日志 isOutputLocal为true时设置无效
    * @param mTag log名称
    * @param mLogPath log输出日志路径
